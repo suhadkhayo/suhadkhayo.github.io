@@ -3,82 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>A Morning at the Coffee Shop</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f1f0ff;
-      color: #29234a;
-      padding: 50px 20px;
+      font-family: Georgia, serif;
+      background: #ead5bd;
+      color: #432c20;
+      padding: 30px 15px;
+      line-height: 1.9;
     }
 
-    .card {
-      background: white;
-      max-width: 500px;
+    .story {
+      background: #fffaf3;
+      max-width: 700px;
       margin: auto;
       padding: 35px;
-      border-radius: 20px;
-      box-shadow: 0 4px 20px #0001;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px #68452b30;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    .coffee {
+      text-align: center;
+      font-size: 45px;
     }
 
     button {
-      background: #7158e2;
+      display: block;
+      margin: 25px auto 0;
+      padding: 12px 22px;
+      background: #754c34;
       color: white;
       border: none;
-      padding: 13px 22px;
-      border-radius: 10px;
+      border-radius: 9px;
       cursor: pointer;
-      margin: 8px;
       font-size: 16px;
     }
 
     button:hover {
-      background: #4b36ad;
-    }
-
-    a {
-      color: #7158e2;
+      background: #4b3025;
     }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first clickable website.</p>
+  <div class="story">
+    <div class="coffee">☕ 🥐</div>
 
-    <button onclick="showMessage()">
-      Click Me!
-    </button>
-
-    <button onclick="changeColor()">
-      Change Background
-    </button>
-
-    <p id="message"></p>
+    <h1>A Morning at the Coffee Shop</h1>
 
     <p>
-      <a href="https://github.com/" target="_blank"
-         rel="noopener noreferrer">
-        Visit GitHub
-      </a>
+      The little bell above the café door rings as you step
+      inside. The smell of freshly ground coffee fills the air,
+      mixing with the sweet scent of cinnamon pastries.
     </p>
+
+    <p>
+      Outside, rain taps gently against the windows. Inside,
+      warm golden lights glow above wooden tables, and a soft
+      song plays in the background. For a moment, the busy
+      world outside seems very far away.
+    </p>
+
+    <p>
+      You walk up to the counter, where a friendly barista
+      smiles and asks, "What can I get started for you today?"
+    </p>
+
+    <p>
+      You order your favorite drink and find a small table
+      beside the window. As you take your first sip, you notice
+      a little handwritten note tucked beneath the sugar jar.
+    </p>
+
+    <p>
+      It reads: "Sometimes, the best stories begin in the most
+      unexpected places."
+    </p>
+
+    <p>
+      You look around the café. A student is writing in a
+      notebook, an older couple is sharing a pastry, and
+      someone near the fireplace is reading a worn-out book.
+      Everyone seems to have a story of their own.
+    </p>
+
+    <p>
+      You smile, settle into your chair, and open your own
+      notebook. Maybe today will be the beginning of something
+      wonderful.
+    </p>
+
+    <h2>The End... or Just the Beginning? ✨</h2>
+
+    <button onclick="window.location.href='index.html'">
+      ← Back to Home
+    </button>
   </div>
-
-  <script>
-    function showMessage() {
-      document.getElementById("message").textContent =
-        "You clicked the button! 🎉";
-    }
-
-    function changeColor() {
-      document.body.style.background =
-        document.body.style.background === "lavender"
-          ? "#f1f0ff"
-          : "lavender";
-    }
-  </script>
 </body>
 </html>
